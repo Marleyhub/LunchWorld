@@ -38,7 +38,7 @@ int main(){
             scanf("%d", &foodchoice);
             strcpy(order[0], menu1Foods[foodchoice - 1]);
             orderPrice[0] = menu1Prices[foodchoice - 1];
-            
+            printf("this%f\n", menu1Prices[0]);
         break;
         
         case 2:
@@ -48,7 +48,7 @@ int main(){
             printf("Write down the number of your choice:\n");
             scanf("%d", &foodchoice);
             strcpy(order[0], menu2Foods[foodchoice - 1]);
-
+            printf("this%f\n", menu2Prices[0]);
         break;
 
         case 3:
@@ -58,7 +58,7 @@ int main(){
             printf("Write down the number of your choice:\n");
             scanf("%d", &foodchoice);
             strcpy(order[0], menu3Foods[foodchoice - 1]);
-
+            printf("this%f\n", menu1Prices[0]);
         break;
             
         default:
