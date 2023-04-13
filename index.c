@@ -7,7 +7,7 @@ int main(){
     int menuchoice;
     int foodchoice;
     int i;
-    char menu [][30] ={ "1 - Brazilian menu", "2 - Indian menu", "3 - Mexican menu"};
+    char menu [][30] ={ "1 - Brazilian menu", "2 -  Indian menu", "3 - Mexican menu"};
     char menu1Foods [][25] = {"1 - Feijoada", "2 - Churrasco", "3 - Comida-baiana"};
     char menu2Foods [][25] = {"1 - Chicken Makhani", "2 - Samosas", "3 - Aloo Gobi", "4 - Naan"};
     char menu3Foods [][25] = {"1 - Tacos", "2 - Tortilhas/guaccamole", "3 - Huevos Rancheros", "4 - Machaca"};
