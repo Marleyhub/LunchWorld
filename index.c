@@ -11,9 +11,9 @@ int main(){
     char menu1Foods [][25] = {"1 - Feijoada", "2 - Churrasco", "3 - Comida-baiana"};
     char menu2Foods [][25] = {"1 - Chicken Makhani", "2 - Samosas", "3 - Aloo Gobi", "4 - Naan"};
     char menu3Foods [][25] = {"1 - Tacos", "2 - Tortilhas/guaccamole", "3 - Huevos Rancheros", "4 - Machaca"};
-    float menu1Prices [10] = {25.50, 30.00, 28.75};
-    float menu2Prices [10] = {21.50, 34.00, 22.75, 35.75};
-    float menu3Prices [10] = {15.50, 10.00, 28.75, 42.50};
+    double menu1Prices [10] = {25.50, 30.00, 28.75};
+    double menu2Prices [10] = {21.50, 34.00, 22.75, 35.75};
+    double menu3Prices [10] = {15.50, 10.00, 28.75, 42.50};
     int menu1FoodsSize = sizeof(menu1Foods)/sizeof(menu1Foods[0]);
     int menu2FoodsSize = sizeof(menu2Foods)/sizeof(menu2Foods[0]);
     int menu3FoodsSize = sizeof(menu2Foods)/sizeof(menu3Foods[0]);
@@ -32,7 +32,7 @@ int main(){
         {
         case 1:
             for(i = 0; i < menu1FoodsSize; i++){
-                printf("%s - R$:%.2f\n", menu1Foods[i], menu1Prices[i]);
+                printf("%s - R$:%.2lf\n", menu1Foods[i], menu1Prices[i]);
             }
             printf("Write down the number of your choice:\n");
             scanf("%d", &foodchoice);
@@ -54,13 +54,13 @@ int main(){
 
         case 3:
             for(i = 0; i < menu3FoodsSize; i++){
-                printf("%s - R$:%.2f\n", menu3Foods[i], menu3Prices[i]);
+                printf("%s - R$:%.2lf\n", menu3Foods[i], menu3Prices[i]);
                 }
             printf("Write down the number of your choice:\n");
             scanf("%d", &foodchoice);
             strcpy(order[0], menu3Foods[foodchoice - 1]);
             orderPrice[0] = menu3Prices[foodchoice - 1];
-            printf("this%f\n", menu3Prices[foodchoice - 1]);
+            printf("this%lf\n", menu3Prices[foodchoice - 1]);
         break;
             
         default:
